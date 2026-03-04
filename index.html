@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon API Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔍 Pokémon API Demo</h1>
+
+  <div class="search">
+    <input type="text" id="pokemonInput" placeholder="Nhập tên hoặc ID Pokémon">
+    <button onclick="fetchPokemon()">Tìm</button>
+  </div>
+
+  <div id="pokemonCard" class="card hidden">
+    <h2 id="name"></h2>
+    <img id="image" />
+    <p><strong>Height:</strong> <span id="height"></span></p>
+    <p><strong>Weight:</strong> <span id="weight"></span></p>
+    <p><strong>Type:</strong> <span id="types"></span></p>
+  </div>
+
+  <p id="error" class="error"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
